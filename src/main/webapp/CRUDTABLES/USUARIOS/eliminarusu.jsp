@@ -1,17 +1,8 @@
-<%-- 
-    Document   : eliminarusu
-    Created on : 15 jul. 2025, 10:12:24 a. m.
-    Author     : DanielValladares
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<%@include file="../../CONNECTION/CONEXION.jsp"%>
+<%
+int c=Integer.parseInt(request.getParameter("v"));
+String sql="delete from usuario where codigou='"+c+"'";
+re.executeUpdate(sql);
+re.close();
+response.sendRedirect("mostrarusu.jsp");
+%>
