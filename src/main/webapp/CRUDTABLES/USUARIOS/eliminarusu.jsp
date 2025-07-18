@@ -1,4 +1,4 @@
-<%@include file="../../CONEX/CONEXION.jsp"%>
+<%@include file="../../CONNECTION/CONEXION.jsp"%>
 <%
 int c=Integer.parseInt(request.getParameter("v"));
 String sql="delete from usuario where codigou='"+c+"'";
