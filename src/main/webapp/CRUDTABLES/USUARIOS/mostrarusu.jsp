@@ -34,8 +34,8 @@
             <tr>
                 <td><% out.print(cu); %></td>
                 <td><% out.print(nu); %></td>
-                <td><a href="eliminad.jsp?v=<%out.print(cu);%>">Eliminar</a></td>
-                <td><a href="formumodificard.jsp?v=<%out.print(cu);%>">Modificar</a></td>
+                <td><a href="eliminausu.jsp?v=<%out.print(cu);%>">Eliminar</a></td>
+                <td><a href="formumodificarsu.jsp?v=<%out.print(cu);%>">Modificar</a></td>
             </tr>
             
             <%
